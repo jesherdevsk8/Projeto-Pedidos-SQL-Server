@@ -1,0 +1,241 @@
+004;Afeganistao				;AFG
+710;Africa do Sul			;ZAF
+008;Albania				;ALB
+276;Alemanha				;DEU
+020;Andorra				;AND
+024;Angola				;AGO
+660;Anguilla				;AIA
+028;Antigua e Barbuda			;ATG
+682;Arabia Saudita			;SAU
+012;Argelia				;DZA
+032;Argentina				;ARG
+051;Armenia				;ARM
+533;Aruba				;ABW
+036;Australia				;AUS
+040;Austria				;AUT
+031;Azerbaijao				;AZE
+044;Bahamas				;BHS
+050;Bangladesh				;BGD
+052;Barbados				;BRB
+048;Barein				;BHR
+056;Belgica				;BEL
+084;Belize				;BLZ
+204;Benin				;BEN
+060;Bermuda				;BMU
+112;Bielorussia				;BLR
+068;Bolivia				;BOL
+535;Bonaire, Santo Eustaquio e Saba	;BES
+070;Bosnia-Herzegovina			;BIH
+072;Botsuana				;BWA
+076;Brasil				;BRA
+096;Brunei				;BRN
+100;Bulgaria				;BGR
+854;Burkina Faso			;BFA
+108;Burundi				;BDI
+064;Butao				;BTN
+132;Cabo Verde				;CPV
+120;Camaroes				;CMR
+116;Camboja				;KHM
+124;Canada				;CAN
+398;Casaquistao				;KAZ
+634;Catar				;QAT
+148;Chade				;TCD
+152;Chile				;CHL
+156;China				;CHN
+344;China, Hong Kong			;HKG
+446;China, Macao			;MAC
+196;Chipre				;CYP
+702;Cingapura				;SGP
+170;Colombia				;COL
+174;Comores				;COM
+178;Congo				;COG
+408;Coreia do Norte			;PRK
+410;Coreia do Sul			;KOR
+384;Costa do Marfim			;CIV
+188;Costa Rica				;CRI
+191;CroAcia				;HRV
+192;Cuba				;CUB
+531;Curacao				;CUW
+208;Dinamarca				;DNK
+262;Djibouti				;DJI
+212;Dominica				;DMA
+818;Egito				;EGY
+222;El Salvador				;SLV
+784;Emirados Arabes Unidos		;ARE
+218;Equador				;ECU
+232;Eritreia				;ERI
+703;Eslovaquia				;SVK
+705;Eslovenia				;SVN
+724;Espanha				;ESP
+840;Estados Unidos da America		;USA
+233;Estonia				;EST
+231;Etiopia				;ETH
+242;Fiji				;FJI
+608;Filipinas				;PHL
+246;Finlandia				;FIN
+250;Franca				;FRA
+266;Gabao				;GAB
+270;Gambia				;GMB
+288;Gana				;GHA
+268;Georgia				;GEO
+292;Gibraltar				;GIB
+308;Granada				;GRD
+300;Grecia				;GRC
+304;Groenlandia				;GRL
+316;Guam				;GUM
+320;Guatemala				;GTM
+831;Guernsey				;GGY
+328;Guiana				;GUY
+254;Guiana Francesa			;GUF
+324;Guine				;GIN
+226;Guine Equatorial			;GNQ
+624;Guine-Bissau			;GNB
+332;Haiti				;HTI
+528;Holanda				;NLD
+340;Honduras				;HND
+348;Hungria				;HUN
+887;Iemen				;YEM
+833;Ilha de Man				;IMN
+312;Ilha Guadalupe			;GLP
+574;Ilha Norfolk			;NFK
+638;Ilha Reuniao			;REU
+248;Ilhas Alanda			;ALA
+136;Ilhas Cayman			;CYM
+184;Ilhas Cook				;COK
+830;Ilhas do Canal			;
+234;Ilhas Faeroe			;FRO
+238;Ilhas Falkland			;FLK
+580;Ilhas Marianas			;MNP
+584;Ilhas Marshall			;MHL
+090;Ilhas Salomao			;SLB
+796;Ilhas Turks e Caicos		;TCA
+850;Ilhas Virgens			;VIR
+092;Ilhas Virgens Britanicas		;VGB
+876;Ilhas Wallis e Futuna		;WLF
+356;india				;IND
+360;Indonesia				;IDN
+364;Ira					;IRN
+368;Iraque				;IRQ
+372;Irlanda				;IRL
+352;Islandia				;ISL
+376;Israel				;ISR
+380;ItAlia				;ITA
+388;Jamaica				;JAM
+392;Japao				;JPN
+832;Jersey				;JEY
+400;Jordania				;JOR
+296;Kiribati				;KIR
+414;Kuwait				;KWT
+418;Laos				;LAO
+426;Lesoto				;LSO
+428;Letonia				;LVA
+422;Libano				;LBN
+430;Liberia				;LBR
+434;Libia				;LBY
+438;Liechtenstein			;LIE
+440;Lituania				;LTU
+442;Luxemburgo				;LUX
+807;Macedonia				;MKD
+450;Madagascar				;MDG
+458;Malasia				;MYS
+454;Malaui				;MWI
+462;Maldivas				;MDV
+466;Mali				;MLI
+470;Malta				;MLT
+504;Marrocos				;MAR
+474;Martinica		 		;MTQ
+480;Mauricio				;MUS
+478;Mauritania				;MRT
+175;Mayotte				;MYT
+484;Mexico				;MEX
+104;Mianma				;MMR
+583;Micronesia				;FSM
+508;Mocambique				;MOZ
+498;MoldAvia				;MDA
+492;Monaco				;MCO
+496;Mongolia				;MNG
+499;Montenegro				;MNE
+500;Montserrat				;MSR
+516;Namibia				;NAM
+520;Nauru				;NRU
+524;Nepal				;NPL
+558;NicarAgua				;NIC
+562;Niger				;NER
+566;Nigeria				;NGA
+570;Niue				;NIU
+578;Noruega				;NOR
+540;Nova Caledonia			;NCL
+554;Nova Zelandia			;NZL
+512;Oma					;OMN
+585;Palau				;PLW
+275;Palestina				;PSE
+591;Panama				;PAN
+598;Papua Nova Guine			;PNG
+586;Paquistao				;PAK
+600;Paraguai				;PRY
+604;Peru				;PER
+612;Pitcairn				;PCN
+258;Polinesia Francesa			;PYF
+616;Polonia				;POL
+630;Porto Rico				;PRI
+620;Portugal				;PRT
+404;Quenia				;KEN
+417;Quirguistao				;KGZ
+826;Reino Unido				;GBR
+140;Republica Centro Africana		;CAF
+180;Republica Democratica do Congo	;COD
+214;Republica Dominicana		;DOM
+203;Republica Tcheca			;CZE
+642;Romenia				;ROU
+646;Ruanda				;RWA
+643;Russia (Federacao Russa)		;RUS
+732;Saara Ocidental			;ESH
+663;Saint Martin (parte francesa)	;MAF
+534;Saint Martin (parte holandesa)	;SXM
+666;Saint Pierre e Miquelon		;SPM
+882;Samoa				;WSM
+016;Samoa Americana			;ASM
+674;San Marino				;SMR
+654;Santa Helena			;SHN
+662;Santa Lucia				;LCA
+652;Sao Bartolomeu			;BLM
+659;Sao Cristovao e Nevis		;KNA
+678;Sao Tome e Principe			;STP
+670;Sao Vicente e Granadinas		;VCT
+680;Sark	 			;
+690;Seichelles				;SYC
+686;Senegal				;SEN
+694;Serra Leoa				;SLE
+688;Servia				;SRB
+760;Siria				;SYR
+706;Somalia				;SOM
+144;Sri Lanka				;LKA
+748;Suazilandia				;SWZ
+728;Sudao do Sul			;SSD
+729;Sudao				;SDN
+752;Suecia				;SWE
+756;Suica				;CHE
+740;Suriname				;SUR
+744;Svalbard e Jan Mayen Islands	;SJM
+762;Tadjiquistao			;TJK
+764;Tailandia				;THA
+834;Tanzania				;TZA
+626;Timor Leste				;TLS
+768;Togo				;TGO
+772;Tokelau				;TKL
+776;Tonga				;TON
+780;Trinidad e Tobago			;TTO
+788;Tunisia				;TUN
+795;Turcomenistao			;TKM
+792;Turquia				;TUR
+798;Tuvalu				;TUV
+804;Ucrania				;UKR
+800;Uganda				;UGA
+858;Uruguai				;URY
+860;Uzbequistao				;UZB
+548;Vanuatu				;VUT
+336;Vaticano				;VAT
+862;Venezuela				;VEN
+704;Vietna				;VNM
+894;Zambia				;ZMB
+716;Zimbabue				;ZWE
