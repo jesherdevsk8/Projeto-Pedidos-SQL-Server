@@ -1,5 +1,5 @@
 # Projeto Pedidos com SQL Server.
-## Ainda em construção.....
 
-Modelagem de Dados e Script SQL com métodos BULK
+Modelagem e Script SQL com métodos BULK
+Ainda em construção.....
 
