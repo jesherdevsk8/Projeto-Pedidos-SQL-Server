@@ -244,3 +244,42 @@ go
 
 
 Select * from Cidades
+
+-- Criando Tabela Produtos
+
+Create Table Produtos
+(
+  Codigo_Produto int Primary Key identity(5,5) Not Null,
+  Descricao_Produto Varchar(100) Not Null,
+  Valor_Custo_Produto Decimal(14,3) Not Null,
+  Valor_Unitario_Venda_Produto Decimal(14,3),
+  Data_Cadastro_Produto Date Not Null
+)
+
+select * from Vendedores
+
+-- Populando a tabela Produtos
+-- Nota-se que não coloquei o codigo_produto, porque ele é indentity ou seja de alto incremento
+
+Insert Into Produtos
+(Descricao_Produto, Valor_Custo_Produto, Valor_Unitario_Venda_Produto, Data_Cadastro_Produto)
+Values ('Este é o primeiro Produto da inserção, Produto01', 10.50, 20.00, '20210923')
+
+Insert Into Produtos
+(Descricao_Produto, Valor_Custo_Produto, Valor_Unitario_Venda_Produto, Data_Cadastro_Produto)
+Values ('Este é o Segundo Produto da inserção, Produto02', 11.50, 21.00, '20210923')
+
+Insert Into Produtos
+(Descricao_Produto, Valor_Custo_Produto, Valor_Unitario_Venda_Produto, Data_Cadastro_Produto)
+Values ('Este é o Terceiro Produto da inserção, Produto03', 15.50, 18.00, '20210923')
+
+Insert Into Produtos
+(Descricao_Produto, Valor_Custo_Produto, Valor_Unitario_Venda_Produto, Data_Cadastro_Produto)
+Values ('Este é o Quarto Produto da inserção, Produto03', 5.50, 10.00, '20210923')
+
+Insert Into Produtos
+(Descricao_Produto, Valor_Custo_Produto, Valor_Unitario_Venda_Produto, Data_Cadastro_Produto)
+Values ('Este é o Quinto Produto da inserção, Produto03', 8.25, 15.00, '20210923')
+
+select * from Produtos
+
