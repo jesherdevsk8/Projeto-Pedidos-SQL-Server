@@ -46,12 +46,10 @@ Values (076, 'BRASIL', 'BRA')
 --
 -- Inserindo dados na Tabela Paises dentro do Banco de Dados Projeto_Pedidos
 -- especificando os Campos da Tabela
-
 --
 Insert Into Paises
 (Codigo_Pais, Descricao_Pais, Codigo_Iso_Pais)
 Values (032, 'ARGENTINA', 'ARG')
-
 
 --
 -- Exibindo todos os registros da Tabela Paises
@@ -98,7 +96,7 @@ go
 -- Criando a Tabela Logradouros dentro do Banco de Dados Projeto_Pedidos
 --
 
-Create Table Logradouros
+Create Logradouros
 (
 Codigo_Logradouro Varchar (5) Primary Key Not Null,
 Descricao_Logradouro varchar(50) Not Null
@@ -173,3 +171,95 @@ go
 --
 
 select * from Cidades
+
+
+--
+-- Criando a Tabela Vendedores dentro do Banco de Dados Projeto_Pedidos
+--
+
+Create Table Vendedores
+(
+Codigo_Vendedor Int Primary Key Not Null Identity, -- (5,5),
+Nome_Vendedor Varchar(100) Not Null,
+Cpf_Vendedor Varchar(20) Not Null,
+Rg_Vendedor  Varchar(20) Not Null,
+Data_Cadastro_Vendedor Date,
+Email_Vendedor  Varchar(100) Not Null,
+)
+
+-- drop table vendedores
+
+Insert Into Vendedores
+Values ('Nelson Francisco Manfrin',
+        '123.456.789-01',
+		'12.345.678-9',
+		'20210923',
+		'nelson.manfrin@gmail.com')
+Insert Into Vendedores
+Values
+        ('Jose Francisco Manfrin',
+        '123.456.789-01',
+		'12.345.678-9',
+		'20210923',
+		'nelson.manfrin@gmail.com')
+Insert Into Vendedores
+Values
+        ('Paulo Francisco Manfrin',
+        '123.456.789-01',
+		'12.345.678-9',
+		'20210923',
+		'nelson.manfrin@gmail.com')
+Insert Into Vendedores
+Values
+        ('Pedro Francisco Manfrin',
+        '123.456.789-01',
+		'12.345.678-9',
+		'20210923',
+		'nelson.manfrin@gmail.com')
+Insert Into Vendedores
+Values
+        ('Antonio Francisco Manfrin',
+        '123.456.789-01',
+		'12.345.678-9',
+		'20210923',
+		'nelson.manfrin@gmail.com')
+Insert Into Vendedores
+Values
+        ('Carlos Francisco Manfrin',
+        '123.456.789-01',
+		'12.345.678-9',
+		'20210923',
+		'nelson.manfrin@gmail.com')
+Insert Into Vendedores
+Values
+        ('Adriana Francisco Manfrin',
+        '123.456.789-01',
+		'12.345.678-9',
+		'20210923',
+		'nelson.manfrin@gmail.com')
+Insert Into Vendedores
+Values
+        ('Francine Francisco Manfrin',
+        '123.456.789-01',
+		'12.345.678-9',
+		'20210923',
+		'nelson.manfrin@gmail.com')
+Insert Into Vendedores
+Values
+        ('Rafael Francisco Manfrin',
+        '123.456.789-01',
+		'12.345.678-9',
+		'20210923',
+		'nelson.manfrin@gmail.com')
+Insert Into Vendedores
+Values
+        ('Vinicius Francisco Manfrin',
+        '123.456.789-01',
+		'12.345.678-9',
+		'20210923',
+		'nelson.manfrin@gmail.com')
+
+Select * from Vendedores
+
+Select * from cidades
+where Nome_Cidade = 'BATATAIS'
