@@ -23,10 +23,10 @@ Use Projeto_Pedidos
 Create Table Paises
 (
   Codigo_Pais int Primary Key Not Null,
-  -- Codigo_Pais int Not Null, <-- Tamb�m pode ser feito dessa forma
+  -- Codigo_Pais int Not Null, <-- Também pode ser feito dessa forma
   Descricao_Pais varchar (60) Not Null,
   Codigo_Iso_Pais varchar(3) Not Null --, 
-  -- Primary Key (Codigo_Pais) <-- Tamb�m pode ser usado Primary Key nesse m�todo
+  -- Primary Key (Codigo_Pais) <-- Também pode ser usado Primary Key nesse m�todo
 )
 
 --
@@ -81,11 +81,11 @@ Select * From Paises
 ---
 --- Vamos dar carga em massa na Tabela Paises.
 --- Para isto vamos executar o comando abaixo
---- utilizando o utilit�rio BULK - Populando a Tabela Pa�ses
+--- utilizando o utilitário BULK - Populando a Tabela Pa�ses
 ---
 
 BULK Insert Paises
-From 'C:\Users\Jesher\Desktop\ETEC - Desen. sistemas\2� Modulo\BD II - Nelson\Projeto_Pedidos\aula 26.08.2021\Tabela_Paises.txt'
+From 'C:\Users\Jesher\Desktop\ETEC - Desen. sistemas\2º Modulo\BD II - Nelson\Projeto_Pedidos\aula 26.08.2021\Tabela_Paises.txt'
 With
 (fieldterminator = ';',
 rowterminator = '\n'
@@ -98,18 +98,18 @@ go
 
 Create Table Logradouros
 (
-Codigo_Logradouro Varchar (5) Primary Key Not Null,
-Descricao_Logradouro varchar(50) Not Null
+  Codigo_Logradouro Int Primary Key Not Null,
+  Descricao_Logradouro varchar(50) Not Null
 )
 
 ---
 --- Vamos dar carga em massa na Tabela Logradouros.
 --- Para isto vamos executar o comando abaixo
---- utilizando o utilit�rio BULK  - Populando a Tabela Logradouros
+--- utilizando o utilitário BULK  - Populando a Tabela Logradouros
 ---
 
 BULK Insert Logradouros
-From 'C:\Users\Jesher\Desktop\ETEC - Desen. sistemas\2� Modulo\BD II - Nelson\Projeto_Pedidos\aula 26.08.2021\Tabela_Tipos_Logradouros1.txt'
+From 'C:\Users\Jesher\Desktop\github Banco de Dados\Projeto_Pedidos em andamento\Tabela_Tipos_Logradouros.txt'
 With
 (fieldterminator = ';',
 rowterminator = '\n'
@@ -181,27 +181,27 @@ where Email_Vendedor LIKE '%Prih%'
 
 Use Projeto_Pedidos
 
-Create Table Teste
+Create Table PessoasTesteBulk
 (
   Id_Pessoa int Primary Key Identity Not Null,
   Nome_Pessoa varchar(100) Not Null,
-  Ra�a_Pessoa varchar(10) Null,
+  Raca_Pessoa varchar(10) Null,
   Rg_Pessoa varchar(50) Not Null,
   Cpf_Pessoa varchar(50) Null,
   Endereco_Pessoa varchar(200) Not Null
 )
 
--- Populando a tebela teste | observa��o: Ela est� como identity, ent�o n�o preciso colocar valor para o Id_Pessoa
+-- Populando a tebela teste | observação: Ela está como identity, então não preciso colocar valor para o Id_Pessoa
 
-BULK Insert Teste
-From 'C:\Users\Jesher\Desktop\ETEC - Desen. sistemas\2� Modulo\BD II - Nelson\Projeto_Pedidos\Cadastro_Teste-Jesher.txt'
+BULK Insert PessoasTesteBulk
+From 'C:\Users\Jesher\Desktop\ETEC - Desen. sistemas\2º Modulo\BD II - Nelson\Projeto_Pedidos\Cadastro_Teste-Jesher.txt'
 With
 (fieldterminator = ';',
 rowterminator = '\n'
 )
 go
 
-Select * From Teste
+Select * From PessoasTesteBulk
 
 -- Comandos usado para Modificar Nome na Tabela Teste
 
@@ -235,7 +235,7 @@ Create Table Cidades
 
 
 BULK Insert Cidades
-From 'C:\Users\Jesher\Desktop\ETEC - Desen. sistemas\2� Modulo\BD II - Nelson\Projeto_Pedidos\aula 26.08.2021\Cidades_Reduzidas.txt'
+From 'C:\Users\Jesher\Desktop\github Banco de Dados\Projeto_Pedidos em andamento\Cidades_Reduzidas.txt'
 With
 (fieldterminator = ';',
 rowterminator = '\n'
@@ -251,8 +251,8 @@ Create Table Produtos
 (
   Codigo_Produto int Primary Key identity(5,5) Not Null,
   Descricao_Produto Varchar(100) Not Null,
-  Valor_Custo_Produto Decimal(14,3) Not Null,
-  Valor_Unitario_Venda_Produto Decimal(14,3),
+  Valor_Custo_Produto Decimal(14,2) Not Null,
+  Valor_Unitario_Venda_Produto Decimal(14,2),
   Data_Cadastro_Produto Date Not Null
 )
 
@@ -263,23 +263,122 @@ select * from Vendedores
 
 Insert Into Produtos
 (Descricao_Produto, Valor_Custo_Produto, Valor_Unitario_Venda_Produto, Data_Cadastro_Produto)
-Values ('Este é o primeiro Produto da inserção, Produto01', 10.50, 20.00, '20210923')
+Values ('Produto01', 10.50, 20.00, '20210923')
 
 Insert Into Produtos
 (Descricao_Produto, Valor_Custo_Produto, Valor_Unitario_Venda_Produto, Data_Cadastro_Produto)
-Values ('Este é o Segundo Produto da inserção, Produto02', 11.50, 21.00, '20210923')
+Values ('Produto02', 11.50, 21.00, '20210923')
 
 Insert Into Produtos
 (Descricao_Produto, Valor_Custo_Produto, Valor_Unitario_Venda_Produto, Data_Cadastro_Produto)
-Values ('Este é o Terceiro Produto da inserção, Produto03', 15.50, 18.00, '20210923')
+Values ('Produto03', 15.50, 18.00, '20210923')
 
 Insert Into Produtos
 (Descricao_Produto, Valor_Custo_Produto, Valor_Unitario_Venda_Produto, Data_Cadastro_Produto)
-Values ('Este é o Quarto Produto da inserção, Produto03', 5.50, 10.00, '20210923')
+Values ('Produto03', 5.50, 10.00, '20210923')
 
 Insert Into Produtos
 (Descricao_Produto, Valor_Custo_Produto, Valor_Unitario_Venda_Produto, Data_Cadastro_Produto)
-Values ('Este é o Quinto Produto da inserção, Produto03', 8.25, 15.00, '20210923')
+Values ('Produto03', 8.25, 15.00, '20210923')
 
 select * from Produtos
+
+
+-- Criando Tabela Clientes Dentro do Banco de Dados Projeto_Pedidos
+
+
+Create Table Clientes
+(
+  Codigo_Cliente int Primary Key identity Not Null,
+  Nome_Cliente Varchar(100) Not Null,
+  Cpf_Cliente Varchar(20) Not Null,
+  Rg_Cliente Varchar(20) Not Null,
+  Cnpj_Cliente Varchar(20),
+  Codigo_Cidade_Cliente Int Not Null,
+  Codigo_Logradouro_Cliente Int Not Null,
+  Descricao_Endereco Varchar(150) Not Null,
+  Numero_Endereco Varchar(10) Not Null,
+  Complemento_Endereco Varchar(100),
+  Ponto_Referencia Varchar(100),
+  Cep_Cliente Varchar(10) Not Null,
+  Telefone_Cliente Varchar(20) Not Null,
+  Email_Cliente Varchar(100) Not Null,
+  Data_Nascimento_Cliente Date,
+  Data_Cadastro_Cliente Date,
+  Constraint FK_Clientes1_Cidades FOREIGN KEY (Codigo_Cidade_Cliente)
+    References Cidades
+    (
+      Codigo_Cidade
+    ),
+  Constraint FK_Clientes_Logradouros1 FOREIGN KEY (Codigo_Logradouro_Cliente)
+    References Logradouros
+    (
+      Codigo_Logradouro
+    )
+)
+
+-- Populando a Tabela Clientes
+
+Insert Into Clientes
+Values
+   ('Nelson Carlos Santos',
+    '123.456.789-01',
+    '12.345.678-9',
+    ' ',
+    3505906,
+    1,
+    'Benjamin Back Constante',
+    '823',
+    'XX.XXX.XXX/0001-XX',
+    'Em frente a Empresa Barbantes Soberano',
+    '14.315-770',
+    '(16)-9.9152.5186',
+    'nelson.manfrin@gmail.com',
+    '19640108',
+    '20210930')
+
+   Insert Into Clientes
+Values
+   ('Joao Faria Cunha',
+    '123.456.789-01',
+    '12.345.678-9',
+    ' ',
+    3505906,
+    1,
+    'Maurilio Biagi',
+    '32',
+    'XX.XYX.XXX/0009-XX',
+    'Esquina',
+    '14.350-154',
+    '(16)-9.9188.8080',
+    'fariajoao@gmail.com',
+    '19940610',
+    '20210930')
+
+Select * from Clientes
+
+
+-- Criando a Tabela Pedidos
+
+Create Table Pedidos
+(
+  Numero_Pedido Int Primary Key identity Not Null,
+  Codigo_Cliente Int Not Null,
+  Codigo_Vendedor Int Not Null,
+  Data_Pedido Date Not Null,
+  Valor_Total_Pedido Decimal(14,2) Not Null,
+  Status_Pedido Varchar(30) Not Null,
+  Data_Faturamento_Pedido Date Not Null,
+  Data_Cancelamento_Pedido Date Not Null,
+  Constraint FK_Clientes1_Cliente Foreign Key (Codigo_Cliente)
+    References Clientes
+      (
+        Codigo_Cliente
+      ),
+  Constraint FK_Vendedor_Vendedores1 Foreign Key (Codigo_Vendedor)
+    References Vendedores
+      (
+        Codigo_Vendedor
+      )
+)
 

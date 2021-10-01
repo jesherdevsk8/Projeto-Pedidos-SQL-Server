@@ -1,0 +1,178 @@
+1;	Area
+2;	Acesso
+3;	Acampamento
+4;	Acesso Local
+5;	Adro
+6;	Area Especial
+7;	Aeroporto
+8;	Alameda
+9;	Avenida Marginal Direita
+10;	Avenida Marginal Esquerda
+11;	Anel Viario
+12;	Antiga Estrada
+13;	Arteria
+14;	Alto
+15;	Atalho
+16;	Area Verde
+17;	Avenida
+18;	Avenida Contorno
+19;	Avenida Marginal
+20;	Avenida Velha
+21;	Balneario
+22;	Beco
+23;	Buraco
+24;	Belvedere
+25;	Bloco
+26;	Balao
+27;	Blocos
+28;	Bulevar
+29;	Bosque
+30;	Boulevard
+31;	Baixa
+32;	Cais
+33;	Calçada
+34;	Caminho
+35;	Canal
+36;	Chacara
+37;	Chapadao
+38;	Ciclovia
+39;	Circular
+40;	Conjunto
+41;	Conjunto Mutirao
+42;	Complexo Viario
+43;	Colonia
+44;	Comunidade
+45;	Condominio
+46;	Corredor
+47;	Campo
+48;	Corrego
+49;	Contorno
+50;	Descida
+51;	Desvio
+52;	Distrito
+53;	Entre Bloco
+54;	Estrada Intermunicipal
+55;	Enseada
+56;	Entrada Particular
+57;	Entre Quadra
+58;	Escada
+59;	Escadaria
+60;	Estrada Estadual
+61;	Estrada Vicinal
+62;	Estrada de Ligacao
+63;	Estrada Municipal
+64;	Esplanada
+65;	Estrada de Servidao
+66;	Estrada
+67;	Estrada Velha
+68;	Estrada Antiga
+69;	Estaçao
+70;	Estadio
+71;	Estancia
+72;	Estrada Particular
+73;	Estacionamento
+74;	Evangelica
+75;	Elevada
+76;	Eixo Industrial
+77;	Favela
+78;	Fazenda
+79;	Ferrovia
+80;	Fonte
+81;	Feira
+82;	Forte
+83;	Galeria
+84;	Granja
+85;	Nucleo Habitacional
+86;	Ilha
+87;	Indeterminado
+88;	Ilhota
+89;	Jardim
+90;	Jardinete
+91;	Ladeira
+92;	Lagoa
+93;	Lago
+94;	Loteamento
+95;	Largo
+96;	Lote
+97;	Mercado
+98;	Marina
+99;	Modulo
+100;	Projecao
+101;	Morro
+102;	Monte
+103;	Nucleo
+104;	Nucleo Rural
+105;	Outeiro
+106;	Paralela
+107;	Passeio
+108;	Patio
+109;	Praca
+110;	Praca de Esportes
+111;	Parada
+112;	Paradouro
+113;	Ponta
+114;	Praia
+115;	Prolongamento
+116;	Parque Municipal
+117;	Parque
+118;	Parque Residencial
+119;	Passarela
+120;	Passagem
+121;	Passagem de Pedestre
+122;	Passagem Subterranea
+123;	Ponte
+124;	Porto
+125;	Quadra
+126;	Quinta
+127;	Quintas
+128;	Rua
+129;	Rua Integracao
+130;	Rua de Ligacao
+131;	Rua Particular
+132;	Rua Velha
+133;	Ramal
+134;	Recreio
+135;	Recanto
+136;	Retiro
+137;	Residencial
+138;	Reta
+139;	Ruela
+140;	Rampa
+141;	Rodo Anel
+142;	Rodovia
+143;	Rotula
+144;	Rua de Pedestre
+145;	Margem
+146;	Retorno
+147;	Rotatoria
+148;	Segunda Avenida
+149;	Sitio
+150;	Servidao
+151;	Setor
+152;	Subida
+153;	Trincheira
+154;	Terminal
+155;	Trecho
+156;	Trevo
+157;	Túnel
+158;	Travessa
+159;	Travessa Particular
+160;	Travessa Velha
+161;	Unidade
+162;	Via
+163;	Via Coletora
+164;	Via Local
+165;	Via de Acesso
+166;	Vala
+167;	Via Costeira
+168;	Viaduto
+169;	Via Expressa
+170;	Vereda
+171;	Via Elevado
+172;	Vila
+173;	Viela
+174;	Vale
+175;	Via Litoranea
+176;	Via de Pedestre
+177;	Variante
+178;	Zigue-Zague
