@@ -1,5 +1,5 @@
 # Projeto Pedidos com SQL Server.
-### É um projeto feito em aula com objetivo de treinar e aprender
+### É um projeto feito em aula com objetivo aprender e praticar
 
 Modelagem e Script SQL com métodos BULK
 
