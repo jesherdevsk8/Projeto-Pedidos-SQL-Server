@@ -256,8 +256,6 @@ Create Table Produtos
   Data_Cadastro_Produto Date Not Null
 )
 
-select * from Vendedores
-
 -- Populando a tabela Produtos
 -- Nota-se que não coloquei o codigo_produto, porque ele é indentity ou seja de alto incremento
 
@@ -380,5 +378,30 @@ Create Table Pedidos
       (
         Codigo_Vendedor
       )
+)
+
+Select * From Pedidos
+
+-- Criando a Tabela Itens_Pedidos
+
+Create Table Itens_Pedidos
+(
+  Numero_Pedido Int Not Null,
+  Numero_item_Pedido Int Primary Key identity Not Null,
+  Codigo_Produto Int Not Null,
+  Quantidade_Vendida Decimal(14,3) Not Null,
+  Valor_Unitario_Produto Decimal(14,3) Not Null,
+  Valor_Total_Produto Decimal(14,2) Not Null,
+  Data_Faturamento_Item Date Not Null,
+  Constraint FK_Numero_Pedidos Foreign Key (Numero_Pedido)
+    References Pedidos
+    (
+      Numero_Pedido
+    ),
+  Constraint FK_Codigo_Produtos Foreign Key (Codigo_Produto)
+    References Produtos
+    (
+      Codigo_Produto
+    )
 )
 
