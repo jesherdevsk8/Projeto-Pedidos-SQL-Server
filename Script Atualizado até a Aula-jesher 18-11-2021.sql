@@ -61,7 +61,7 @@ Select * From Paises
 -- Removendo todos os registros da Tabela Paises
 --
 
--- Delete From Paises
+Delete From Paises
 
 --
 
@@ -85,7 +85,7 @@ Select * From Paises
 ---
 
 BULK Insert Paises
-From 'C:\2º DS - BD II - 2º Semestre 2021\Tabela_Paises.txt'
+From 'C:\Users\Aluno\Desktop\jesher\Projeto-Pedidos-SQL-Server\Tabela_Paises.txt'
 With
 (fieldterminator = ';',
 rowterminator = '\n'
@@ -110,7 +110,7 @@ Descricao_Logradouro varchar(50) Not Null
 ---
 
 BULK Insert Logradouros
-From 'C:\2º DS - BD II - 2º Semestre 2021\Tabela_Tipos_Logradouros.txt'
+From 'C:\Users\Aluno\Desktop\jesher\Projeto-Pedidos-SQL-Server\Tabela_Tipos_Logradouros.txt'
 With
 (fieldterminator = ';',
 rowterminator = '\n'
@@ -162,7 +162,7 @@ Constraint FK_Cidades_Paises Foreign Key (Codigo_Pais)
 ---
 
 BULK Insert Cidades
-From 'C:\2º DS - BD II - 2º Semestre 2021\Cidades_Reduzidas.txt'
+From 'C:\Users\Aluno\Desktop\jesher\Projeto-Pedidos-SQL-Server\Tabela_Cidades_Reduzidas.txt'
 With
 (fieldterminator = ';',
 rowterminator = '\n'
@@ -192,6 +192,8 @@ Email_Vendedor  Varchar(100) Not Null,
 )
 
 -- drop table vendedores
+
+Select * from Itens_Pedidos
 
 Insert Into Vendedores
 Values ('Nelson Francisco Manfrin',
@@ -326,7 +328,45 @@ Values
     '19640108',
     '20210930')
 
+	Insert Into Clientes
+Values
+   ('Jesher Minelli Alves',
+    '145.456.750-01',
+    '12.450.111-1',
+    ' ',
+    3505906,
+    1,
+    'Ferreira Filho',
+    '545',
+    ' ',
+    'Ao lado da igreja',
+    '14.350-000',
+    '(16)-9.991445456',
+    'jesherdevsk8@gmail.com',
+    '19940608',
+    '20211118')
+
+		Insert Into Clientes
+Values
+   ('Pedro Rocha Francisco',
+    '121.111.780-01',
+    '15.124.487-1',
+    ' ',
+    3505906,
+    1,
+    'Ferreira Salgado Filho',
+    '666',
+    ' ',
+    'Ao lado da farmácia bom Jesus',
+    '14.350-000',
+    '(16)-9.981445451',
+    'pedrorocha@gmail.com',
+    '19880510',
+    '20211118')
+
 Select * from Clientes
+
+Select * from Itens_Pedidos
 
 --
 -- Criando a Tabela Produtos dentro do Banco de Dados Projeto_Pedidos
@@ -350,7 +390,23 @@ INSERT INTO Produtos
 values ('ARROZ EMPÓRIO SAO JOAO 5 KG',
          19.500,
          25.000,
-         '20210930)
+         '20211118')
+
+INSERT INTO Produtos
+values ('ARROZ TIO ZÉ 5 KG',
+         13.500,
+         18.000,
+         '20211118')
+
+Update Produtos set Descricao_Produto = 'ARROZ CARUNCHÃO 10KG'
+Where Codigo_Produto = 3
+
+select * from produtos
+
+Alter Table Nome_Tabela Drop COLUMN nome_da_coluna  -- apaga uma coluna
+
+Alter Table Nome_Tabela Add Nome_coluna int -- muda uma coluna
+
 
 
 --
@@ -403,6 +459,8 @@ values (1,
          NULL,
          NULL)
 
+		 SELECT * FROM Pedidos
+
 --
 -- Criando a Tabela Itens_Pedidos dentro do Banco de Dados Projeto_Pedidos
 --
@@ -430,6 +488,8 @@ Constraint FK_Itens_Pedidos_Produtos FOREIGN KEY (Codigo_Produto)
 	)
 )
 
+Select * from Produtos
+
 INSERT INTO Itens_Pedidos
 values (1,
 		1,
@@ -439,6 +499,18 @@ values (1,
         'A FATURAR',
         NULL,
         NULL)
+
+		INSERT INTO Itens_Pedidos
+values (2,
+		1,
+        10,
+        13.555,
+        135.55,
+        'A FATURAR',
+        NULL,
+        NULL)
+
+
 
 SELECT * FROM Itens_Pedidos
 
@@ -472,7 +544,7 @@ SELECT * FROM Itens_Pedidos
         Cid.Nome_Cidade,
  	   Cid.Uf_Cidade
    from Cidades as Cid
- ---  where Cid.Uf_Cidade = 'SP'
+ -- where Cid.Uf_Cidade = 'SP'
    where Cid.Nome_Cidade = 'GUAIRA'
  ---
  --- Exibindo algumas colunas da tabela de Cidades
@@ -484,8 +556,8 @@ SELECT * FROM Itens_Pedidos
  	   Cid.Uf_Cidade
    from Cidades as Cid
  ---  where Cid.Uf_Cidade = 'SP'
- --- where Cid.Nome_Cidade = 'AGUA BRANCA'
- ---  where Cid.Nome_Cidade LIKE '%AB%'
+ --where Cid.Nome_Cidade = 'AGUA BRANCA'
+ where Cid.Nome_Cidade LIKE '%AB%'
  ---  Order by Cid.Uf_Cidade,
  ---      Cid.Nome_Cidade Desc
  Order by Cid.Nome_Cidade,
@@ -506,9 +578,9 @@ SELECT * FROM Itens_Pedidos
  	   Pai.Descricao_Pais as 'Nome do País'
    from Cidades as Cid , Paises as Pai
    where Cid.Codigo_Pais = Pai.Codigo_Pais
-     and Cid.Uf_Cidade = 'SP'
- --- where Cid.Nome_Cidade = 'AGUA BRANCA'
- ---  where Cid.Nome_Cidade LIKE '%AB%'
+     and Cid.Uf_Cidade = 'MG'
+  --where Cid.Nome_Cidade = 'AGUA BRANCA'
+  --where Cid.Nome_Cidade LIKE '%AB%'
  ---  Order by Cid.Uf_Cidade,
  ---      Cid.Nome_Cidade Desc
  Order by Cid.Nome_Cidade,
@@ -535,3 +607,29 @@ SELECT * FROM Itens_Pedidos
  ---      Cid.Nome_Cidade Desc
  Order by Cid.Nome_Cidade,
           Cid.Uf_Cidade
+
+Select Ped.Numero_Pedido,
+	   Ped.Codigo_Cliente,
+	   Cli.Nome_Cliente,
+	   Ped.Codigo_Vendedor,
+	   Vend.Nome_Vendedor,
+	   Ped.Data_Pedido,
+	   Ped.Valor_Total_Pedido,
+	   Ip.Codigo_Produto,
+	   Prod.Descricao_Produto,
+	   Ip.Quantidade_Vendida,
+	   Ip.Valor_Unitario_Produto,
+	   Ip.Valor_Total_Produto
+
+From Pedidos as Ped,
+     Clientes as Cli,
+	 Vendedores as Vend,
+	 Itens_Pedidos as Ip,
+	 Produtos as prod
+
+Where Ped.Codigo_Cliente = Cli.Codigo_Cliente
+and Ped.Codigo_Vendedor = Vend.Codigo_Vendedor
+and Ip.Codigo_Produto = Prod.Codigo_Produto
+and Ped.Numero_Pedido = Ip.Numero_Pedido
+
+Select * from Clientes
