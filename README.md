@@ -1,5 +1,7 @@
-# Projeto Pedidos com SQL Server.
-### É um projeto feito em aula com objetivo aprender e praticar
+## Repositório de comandos SQL com SQL-Server e MySql
 
-Modelagem e Script SQL com métodos BULK
+- Contém comandos MYSQL
+  - Comandos MSSQL
+    - Modelagem e Script MSSQL com métodos BULK
 
+### Esses são exercícios de aula para minha própria fixação
