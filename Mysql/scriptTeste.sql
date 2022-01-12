@@ -8,19 +8,11 @@ CREATE TABLE tbl_teste_incremento (
 /* Começando o auto incremento a partir do 10 */
 
 insert into tbl_teste_incremento (nome)
-values('Jesher');
-
-insert into tbl_teste_incremento (nome)
-values('Prihh');
-
-insert into tbl_teste_incremento (nome)
-values('Emy');
-
-insert into tbl_teste_incremento (nome)
-values('Sophia');
-
-insert into tbl_teste_incremento (nome)
-values('Nick');
+values('Jesher'),
+values('Prihh'),
+values('Emy'),
+values('Sophia'),
+values('Nick'),
 
 select * from tbl_teste_incremento;
 
@@ -34,10 +26,8 @@ auto_increment = 20;
 /* alterar o valor de incremento do próximo registro*/
 
 insert into tbl_teste_incremento (nome)
-values('João');
+values
+('João'),
+('Bruna'),
+('Linus tech');
 
-insert into tbl_teste_incremento (nome)
-values('Bruna');
-
-insert into tbl_teste_incremento (nome)
-values('Linus tech');
