@@ -5,7 +5,7 @@ SHOW DATABASES;
 status;
 
 CREATE DATABASE testeDB;
-SHOW CREATE TABLE testeDB;
+
 USE testeDB;
 status;
 
@@ -32,8 +32,6 @@ FOREIGN KEY (idpessoa) REFERENCES pessoas (id)
 );
 
 DESC profissao;
-
-SHOW CREATE TABLE pessoas;
 
 INSERT INTO profissao (idprofissao,idpessoa,nomeprofissao) VALUES
 ('1','1','Engenheiro de Software'),

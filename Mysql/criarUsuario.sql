@@ -1,7 +1,7 @@
 /*CRIAR USUARIO */
 CREATE USER usuario@localhost IDENTIFIED BY '123';
 SELECT User FROM mysql.user;
-SELECT User, Host FROM mysql.user;
+SELECT User, Host FRMO mysql.user;
 
 CREATE USER usuario2@localhost;
 SET PASSWORD FOR 'usuario2'@'localhost' = PASSWORD('1234');

@@ -14,11 +14,7 @@
 
 ## Importar backup banco de dados mysql no terminal
 
-<<<<<<< HEAD
 >   sudo mysql -u jesher -p < /home/boyah/Documentos/backup-banco-testando-11-01-2022.sql
-=======
->   sudo mysql -u jesher -p testanto < /home/boyah/Documentos/backup-banco-testando-11-01-2022.sql
->>>>>>> 17761e07ab238c71c6585c79fddde6f4d6c34359
 
 **Importando dentro do mysql**
 
