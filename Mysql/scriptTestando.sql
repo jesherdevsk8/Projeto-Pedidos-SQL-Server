@@ -149,3 +149,29 @@ lembrar de desativar safe updates em edit-preferences-sql editor-safe updates
 
 Truncate table cursos;
 Select * From cursos;
+
+-- Criando nova tabela
+Create Table p_assiste_c (
+  id int primary key auto_increment not null,
+  data date,
+  idpessoa int,
+  idcurso int,
+  foreign key (idpessoa) references pessoas (id),
+  foreign key (idcurso) references cursos (idcurso)
+);
+
+-- Inserindo dados
+Insert into p_assiste_c values
+(default, '2022-03-01', '2', '7'),
+(default, '2022-05-23', '1', '5'),
+(default, '2022-08-03', '3', '2'),
+(default, '2022-01-08', '5', '6'),
+(default, '2022-10-04', '6', '3');
+
+-- Listar relacionamentos / junções
+select p.nome, c.nome from pessoas p
+join p_assiste_c a
+on p.id = a.idpessoa
+join cursos c
+on c.idcurso = a.idcurso
+order by p.nome;

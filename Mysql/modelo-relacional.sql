@@ -27,9 +27,19 @@ WHERE id = '1';
 
 -- Juntando tabelas
 
-SELECT gafanhotos.nome, cursos.nome, cursos.ano
-FROM gafanhotos
-JOIN cursos
-ON cursos.idcurso = gafanhotos.cursopreferido;
+SELECT g.nome, c.nome, c.ano
+FROM gafanhotos as g
+INNER JOIN cursos as c
+ON c.idcurso = g.cursopreferido
+ORDER BY g.nome.;
+
+-- Juntando tabelas com campos nulos
+
+SELECT g.nome, c.nome, c.ano
+FROM gafanhotos as g
+RIGHT OUTER JOIN cursos as c
+ON c.idcurso = g.cursopreferido
+ORDER BY c.nome;
+-- RIGHT OUTER JOIN está dando preferencia à tabela da direita(cursos)o;
 
 
